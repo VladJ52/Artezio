@@ -1,0 +1,2 @@
+select first_name, last_name, salary from employee where salary < 30000;
+select employee.first_name, employee.last_name, post.post_name, employee.salary from employee inner join post on post.id = employee.post_id where employee.post_id = 2 and salary < 30000;
